@@ -19,7 +19,7 @@ class MastermindAI:
 
     def generate_next_guess(self, feedback):
         if not feedback:
-            self.current_guess = '1122'  # Initial guess based on Knuth's algorithm
+            self.current_guess = '1234'  # Initial guess based on Knuth's algorithm
             return self.current_guess
 
         self.possible_codes = [code for code in self.possible_codes if self.evaluate_guess(self.current_guess, code) == feedback]
